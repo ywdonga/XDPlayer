@@ -76,7 +76,7 @@ public protocol XDPlayerPlaybackDelegate: AnyObject {
 // MARK: - Player
 
 /// ▶️ Player, simple way to play and stream media
-open class XDPlayer: UIViewController {
+public class XDPlayer: UIViewController {
 
     // types
     
