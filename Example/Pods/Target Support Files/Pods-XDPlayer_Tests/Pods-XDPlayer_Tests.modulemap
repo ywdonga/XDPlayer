@@ -1,0 +1,6 @@
+framework module Pods_XDPlayer_Tests {
+  umbrella header "Pods-XDPlayer_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

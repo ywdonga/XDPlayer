@@ -1,0 +1,16 @@
+PODS:
+  - XDPlayer (0.1.0)
+
+DEPENDENCIES:
+  - XDPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  XDPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XDPlayer: 36a00462ef47a4ca52547fd58f83fc2de4c1a884
+
+PODFILE CHECKSUM: 34152b913ef492805dba63327d354eefcc7ed502
+
+COCOAPODS: 1.11.3
