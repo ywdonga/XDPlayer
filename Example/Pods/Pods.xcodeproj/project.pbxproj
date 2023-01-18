@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		0165B1FF8FB7767FB5D71DEE51F05489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		071CFA60C7B49AE3809597D3CFAAAABC /* Pods-XDPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB597DF1C9DA1ED900FAF4F3DF59038A /* Pods-XDPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0812D4A8367476586CD1DC89E18B7949 /* XDPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F59E32A588DAD9FBE56BF3C01384D /* XDPlayer.swift */; };
 		0E30BCE18E7B4D1B3A5F71549C2AC67D /* Pods-XDPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E933E1DBAD81748CB52072478F77BEB5 /* Pods-XDPlayer_Example-dummy.m */; };
 		210658C52B08CB4FBEA4230F39D1CAB1 /* Pods-XDPlayer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B17814B83CB11B3C93A67E997A253317 /* Pods-XDPlayer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		351A6346F81BB8172F3DFF6FD9F41D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3EE72D561D3122B57519105C38049186 /* XDPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D129CEC1479096D63786403F21C1301 /* XDPlayer-dummy.m */; };
 		5115A07FB91A489C7CE6DFD15A41DAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		99754598E1108D677B3E3507D6914792 /* XDPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F80F3F549C3184020F4ACAD3695369 /* XDPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B16F3BFDC78989DBD13CD5F4EDCE0475 /* XDPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66434F4DD011A41FB93D824FDE8E08 /* XDPlayer.swift */; };
+		7538E370B6542987EC786E68ED202D84 /* XDPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 251FA4086B5B26F93E28720A5F862709 /* XDPlayer-dummy.m */; };
+		99754598E1108D677B3E3507D6914792 /* XDPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50944D74BE9261BDC7F365E7863B5D9A /* XDPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC1A875BD6FE053076CBD7223625202E /* Pods-XDPlayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C562BA479B54362DBC850AA93851B /* Pods-XDPlayer_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -37,39 +37,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07F80F3F549C3184020F4ACAD3695369 /* XDPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDPlayer-umbrella.h"; sourceTree = "<group>"; };
-		08F1652AD3D1AD39B1496D827A94E251 /* XDPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDPlayer-prefix.pch"; sourceTree = "<group>"; };
 		09E4834846C429DE820F002EBD93867C /* Pods-XDPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0F7BDE1409E549DA7CE1F4DAE897C0F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		141242115DC21EB3E683C3C6591B9487 /* Pods-XDPlayer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDPlayer_Example-Info.plist"; sourceTree = "<group>"; };
 		14974CAF01BAE81CCCB06C4DE5B7460D /* Pods-XDPlayer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XDPlayer_Tests.modulemap"; sourceTree = "<group>"; };
 		170C562BA479B54362DBC850AA93851B /* Pods-XDPlayer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDPlayer_Tests-dummy.m"; sourceTree = "<group>"; };
-		2843D9BA7BE407ED36ED7FAD3FDCBB95 /* XDPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XDPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		251FA4086B5B26F93E28720A5F862709 /* XDPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDPlayer-dummy.m"; sourceTree = "<group>"; };
 		296B2D9CE717B174EDD064F878080998 /* Pods-XDPlayer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XDPlayer_Example.modulemap"; sourceTree = "<group>"; };
-		2E66434F4DD011A41FB93D824FDE8E08 /* XDPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XDPlayer.swift; path = XDPlayer/Classes/XDPlayer.swift; sourceTree = "<group>"; };
+		2E1095CBF25933A4CF292A0F34330670 /* XDPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XDPlayer.modulemap; sourceTree = "<group>"; };
 		2F5BA9D41DB35E91D7626756BBD036B5 /* Pods-XDPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		30A1E1AEA97A8A292127D627A725C42A /* Pods-XDPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		33C8A900A2B00EF1615C417C74746F30 /* XDPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XDPlayer-Info.plist"; sourceTree = "<group>"; };
-		4ADB5F794CC1B7D8DD581420E703F857 /* XDPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDPlayer.release.xcconfig; sourceTree = "<group>"; };
-		5D129CEC1479096D63786403F21C1301 /* XDPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDPlayer-dummy.m"; sourceTree = "<group>"; };
-		6145B269BFE93C2910A23034304C89F2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		678693CA777330FE7B087700699185CD /* XDPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDPlayer.debug.xcconfig; sourceTree = "<group>"; };
+		347B3D803E5E5ED153556CEFCCDD77B7 /* XDPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDPlayer.debug.xcconfig; sourceTree = "<group>"; };
+		50944D74BE9261BDC7F365E7863B5D9A /* XDPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDPlayer-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7D7F5C809172B27DE708E2CA2D1C60B8 /* XDPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XDPlayer.modulemap; sourceTree = "<group>"; };
-		7E94C5BA3479E59ABAF3C8E8302AB0C0 /* XDPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XDPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E94C5BA3479E59ABAF3C8E8302AB0C0 /* XDPlayer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XDPlayer; path = XDPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D2434D253587946AEE9B5590E2B35E /* Pods-XDPlayer_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XDPlayer_Example"; path = Pods_XDPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		854854B4005F7055B7224235C3F2C9A7 /* Pods-XDPlayer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDPlayer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		861DC9D2EE3DD8EE527C58F9D0F95BEA /* Pods-XDPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CC5F5FBC98A5283B006C73B4B930C70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		92070FAF2CA58436CDC6DC878F0E42F2 /* Pods-XDPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A120EDAC79B1B1D0680260B3F884DE11 /* XDPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XDPlayer-Info.plist"; sourceTree = "<group>"; };
 		AA497AAF603F196A3FE76052BB791252 /* Pods-XDPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ADC3933EF5CF5A259153D52ED2C6CE4C /* XDPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XDPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B17814B83CB11B3C93A67E997A253317 /* Pods-XDPlayer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDPlayer_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BC32185028B56AFB8AE859AD4E89093C /* Pods-XDPlayer_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XDPlayer_Tests"; path = Pods_XDPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0F59E32A588DAD9FBE56BF3C01384D /* XDPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XDPlayer.swift; path = XDPlayer/Classes/XDPlayer.swift; sourceTree = "<group>"; };
 		D0D5E9334DA69626DAED0EC6B47B318D /* Pods-XDPlayer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDPlayer_Tests-Info.plist"; sourceTree = "<group>"; };
 		D2CA7250B42D03563F34867EBB8EBDE3 /* Pods-XDPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DC3411B0282199D272DD228F8E13211E /* XDPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDPlayer-prefix.pch"; sourceTree = "<group>"; };
 		E7EB9992AEC788FD07A7126CDE5A1CFC /* Pods-XDPlayer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDPlayer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E933E1DBAD81748CB52072478F77BEB5 /* Pods-XDPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDPlayer_Example-dummy.m"; sourceTree = "<group>"; };
 		EB597DF1C9DA1ED900FAF4F3DF59038A /* Pods-XDPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
+		F0989BA22DA809D1B987386EDA88A7F7 /* XDPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDPlayer.release.xcconfig; sourceTree = "<group>"; };
+		FE9EC02BA792C6BE318B63A6BB28E6E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,19 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11B0E0AEB6563756D6C1F783073A91F1 /* Support Files */ = {
+		16941B8AE71E2B105DC501EB7D745F09 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7D7F5C809172B27DE708E2CA2D1C60B8 /* XDPlayer.modulemap */,
-				5D129CEC1479096D63786403F21C1301 /* XDPlayer-dummy.m */,
-				33C8A900A2B00EF1615C417C74746F30 /* XDPlayer-Info.plist */,
-				08F1652AD3D1AD39B1496D827A94E251 /* XDPlayer-prefix.pch */,
-				07F80F3F549C3184020F4ACAD3695369 /* XDPlayer-umbrella.h */,
-				678693CA777330FE7B087700699185CD /* XDPlayer.debug.xcconfig */,
-				4ADB5F794CC1B7D8DD581420E703F857 /* XDPlayer.release.xcconfig */,
+				8CC5F5FBC98A5283B006C73B4B930C70 /* LICENSE */,
+				FE9EC02BA792C6BE318B63A6BB28E6E2 /* README.md */,
+				ADC3933EF5CF5A259153D52ED2C6CE4C /* XDPlayer.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XDPlayer";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		379D003FEA28206E073F8D0865B57EC2 /* Pods-XDPlayer_Example */ = {
@@ -130,16 +125,6 @@
 			);
 			name = "Pods-XDPlayer_Example";
 			path = "Target Support Files/Pods-XDPlayer_Example";
-			sourceTree = "<group>";
-		};
-		37DE94C30AAA1FD2CD82E4884787F9E6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0F7BDE1409E549DA7CE1F4DAE897C0F5 /* LICENSE */,
-				6145B269BFE93C2910A23034304C89F2 /* README.md */,
-				2843D9BA7BE407ED36ED7FAD3FDCBB95 /* XDPlayer.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -175,25 +160,40 @@
 			path = "Target Support Files/Pods-XDPlayer_Tests";
 			sourceTree = "<group>";
 		};
+		8652BF60CD38155EB72A26B67D445D22 /* XDPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F59E32A588DAD9FBE56BF3C01384D /* XDPlayer.swift */,
+				16941B8AE71E2B105DC501EB7D745F09 /* Pod */,
+				CE4A18455D2B08422FB97F2E77CC081C /* Support Files */,
+			);
+			name = XDPlayer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		8C8A8E5237C55AC4822375FD3505E18C /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				82D2434D253587946AEE9B5590E2B35E /* Pods-XDPlayer_Example */,
 				BC32185028B56AFB8AE859AD4E89093C /* Pods-XDPlayer_Tests */,
-				7E94C5BA3479E59ABAF3C8E8302AB0C0 /* XDPlayer.framework */,
+				7E94C5BA3479E59ABAF3C8E8302AB0C0 /* XDPlayer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C835619F6C68F112ECDDAC62B737DD39 /* XDPlayer */ = {
+		CE4A18455D2B08422FB97F2E77CC081C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E66434F4DD011A41FB93D824FDE8E08 /* XDPlayer.swift */,
-				37DE94C30AAA1FD2CD82E4884787F9E6 /* Pod */,
-				11B0E0AEB6563756D6C1F783073A91F1 /* Support Files */,
+				2E1095CBF25933A4CF292A0F34330670 /* XDPlayer.modulemap */,
+				251FA4086B5B26F93E28720A5F862709 /* XDPlayer-dummy.m */,
+				A120EDAC79B1B1D0680260B3F884DE11 /* XDPlayer-Info.plist */,
+				DC3411B0282199D272DD228F8E13211E /* XDPlayer-prefix.pch */,
+				50944D74BE9261BDC7F365E7863B5D9A /* XDPlayer-umbrella.h */,
+				347B3D803E5E5ED153556CEFCCDD77B7 /* XDPlayer.debug.xcconfig */,
+				F0989BA22DA809D1B987386EDA88A7F7 /* XDPlayer.release.xcconfig */,
 			);
-			name = XDPlayer;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XDPlayer";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -218,7 +218,7 @@
 		F613E6CFC9E769A1DB29EDC8BC92545F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C835619F6C68F112ECDDAC62B737DD39 /* XDPlayer */,
+				8652BF60CD38155EB72A26B67D445D22 /* XDPlayer */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 			buildConfigurationList = 2A671C763C7D81C3BB6249A72F534BC6 /* Build configuration list for PBXNativeTarget "XDPlayer" */;
 			buildPhases = (
 				007AA32D0FC9820B28317DEA5FFDBFAF /* Headers */,
-				8BE1DBA8CA35A9EFB9B91AC4A0B0F57B /* Sources */,
+				764F45F523A76B18761E842B1F5F5058 /* Sources */,
 				16DD10AE74BBC04FCBB475E7FC52620C /* Frameworks */,
 				E328D92B411F70A5B525B4DC4E221383 /* Resources */,
 			);
@@ -306,7 +306,7 @@
 			);
 			name = XDPlayer;
 			productName = XDPlayer;
-			productReference = 7E94C5BA3479E59ABAF3C8E8302AB0C0 /* XDPlayer.framework */;
+			productReference = 7E94C5BA3479E59ABAF3C8E8302AB0C0 /* XDPlayer */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -379,12 +379,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE1DBA8CA35A9EFB9B91AC4A0B0F57B /* Sources */ = {
+		764F45F523A76B18761E842B1F5F5058 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16F3BFDC78989DBD13CD5F4EDCE0475 /* XDPlayer.swift in Sources */,
-				3EE72D561D3122B57519105C38049186 /* XDPlayer-dummy.m in Sources */,
+				0812D4A8367476586CD1DC89E18B7949 /* XDPlayer.swift in Sources */,
+				7538E370B6542987EC786E68ED202D84 /* XDPlayer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +530,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -573,7 +574,7 @@
 		};
 		985DC82ACCE91C7D61D004DC7DAD40C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ADB5F794CC1B7D8DD581420E703F857 /* XDPlayer.release.xcconfig */;
+			baseConfigurationReference = F0989BA22DA809D1B987386EDA88A7F7 /* XDPlayer.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -596,7 +597,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -706,7 +707,7 @@
 		};
 		DBF287203618EDFAF79C0C665B77AB74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 678693CA777330FE7B087700699185CD /* XDPlayer.debug.xcconfig */;
+			baseConfigurationReference = 347B3D803E5E5ED153556CEFCCDD77B7 /* XDPlayer.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -729,7 +730,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
