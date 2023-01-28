@@ -697,8 +697,7 @@ extension XDPlayer {
         }
 
         self._avplayer.replaceCurrentItem(with: self._playerItem)
-        self._avplayer.rate = rate
-
+        
         // update new playerItem settings
         if self.playbackLoops {
             self._avplayer.actionAtItemEnd = .none
