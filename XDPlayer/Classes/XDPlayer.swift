@@ -28,6 +28,7 @@ import UIKit
 import Foundation
 import AVFoundation
 import CoreGraphics
+import AVKit
 
 // MARK: - error types
 
@@ -71,6 +72,9 @@ public protocol XDPlayerPlaybackDelegate: AnyObject {
     func playerPlaybackDidEnd(_ player: XDPlayer)
     func playerPlaybackWillLoop(_ player: XDPlayer)
     func playerPlaybackDidLoop(_ player: XDPlayer)
+    
+    func playerEnterFullScreen()
+    func playerExitFullScreen()
 }
 
 // MARK: - Player
@@ -360,6 +364,7 @@ public class XDPlayer: UIViewController {
         return avplayer
     }()
     internal var _playerItem: AVPlayerItem?
+    internal weak var _avFullScreenPlayer: XDPlayVC?
 
     internal var _playerObservers = [NSKeyValueObservation]()
     internal var _playerItemObservers = [NSKeyValueObservation]()
@@ -428,7 +433,7 @@ public class XDPlayer: UIViewController {
 
     open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        if self.playbackState == .playing {
+        if self.playbackState == .playing && _avFullScreenPlayer == nil {
             self.pause()
         }
     }
@@ -599,6 +604,25 @@ extension XDPlayer {
         }
     }
 
+}
+
+extension XDPlayer {
+    
+    /// Enter full screen mode
+    public func enterFullScreen(_ fromVC: UIViewController, supportedOrientations: UIInterfaceOrientationMask = UIInterfaceOrientationMask.all){
+//        guard let acc = self.asset else { return }
+//        let vc = AVPlayerViewController()
+//        vc.player = AVPlayer(playerItem: AVPlayerItem(asset: acc))
+//        vc.player?.seek(to: currentTime)
+//        vc.player?.play()
+//        fromVC.present(vc, animated: true, completion: nil)
+   
+        
+        let playVC = XDPlayVC(playbackDelegate: playbackDelegate, supportedOrientations: supportedOrientations)
+        playVC.player = _avplayer
+        fromVC.present(playVC, animated: true, completion: nil)
+        self._avFullScreenPlayer = playVC
+    }
 }
 
 // MARK: - loading funcs

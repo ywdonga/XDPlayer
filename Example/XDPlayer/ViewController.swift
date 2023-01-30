@@ -8,6 +8,7 @@
 
 import UIKit
 import XDPlayer
+import AVKit
 
 let videoUrl = URL(string: "http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4")!
 
@@ -47,12 +48,22 @@ class ViewController: UIViewController {
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer(_:)))
         tapGestureRecognizer.numberOfTapsRequired = 1
         self.player.view.addGestureRecognizer(tapGestureRecognizer)
+        
+        let btn = UIButton(frame: CGRect(x: 10, y: 10, width: 100, height: 60))
+        btn.setTitle("全屏播放", for: .normal)
+        btn.backgroundColor = .red
+        btn.addTarget(self, action: #selector(fullBtnClick), for: .touchUpInside)
+        view.addSubview(btn)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.player.playFromBeginning()
+        self.player.playFromCurrentTime()
+    }
+    
+    @objc func fullBtnClick() {
+        self.player.enterFullScreen(self)
     }
 }
 
@@ -108,18 +119,31 @@ extension ViewController: XDPlayerDelegate {
 extension ViewController: XDPlayerPlaybackDelegate {
     
     func playerCurrentTimeDidChange(_ player: XDPlayer) {
+        
     }
     
     func playerPlaybackWillStartFromBeginning(_ player: XDPlayer) {
+        
     }
     
     func playerPlaybackDidEnd(_ player: XDPlayer) {
+        
     }
     
     func playerPlaybackWillLoop(_ player: XDPlayer) {
+        
     }
 
     func playerPlaybackDidLoop(_ player: XDPlayer) {
+        
+    }
+    
+    func playerEnterFullScreen() {
+        
+    }
+    
+    func playerExitFullScreen() {
+        
     }
 }
 
