@@ -142,6 +142,7 @@ public class XDPlayer: UIViewController {
     /// Playback delegate.
     open weak var playbackDelegate: XDPlayerPlaybackDelegate?
 
+    private var statusBarHidden = false
     // configuration
 
     /// Local or remote URL for the file asset to be played.
@@ -393,6 +394,10 @@ public class XDPlayer: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
+    public override var prefersStatusBarHidden: Bool {
+        return statusBarHidden
+    }
+    
     deinit {
         self._avplayer.pause()
         self.setupPlayerItem(nil)
@@ -607,21 +612,22 @@ extension XDPlayer {
 }
 
 extension XDPlayer {
-    
-    /// Enter full screen mode
-    public func enterFullScreen(_ fromVC: UIViewController, supportedOrientations: UIInterfaceOrientationMask = UIInterfaceOrientationMask.all){
-//        guard let acc = self.asset else { return }
-//        let vc = AVPlayerViewController()
-//        vc.player = AVPlayer(playerItem: AVPlayerItem(asset: acc))
-//        vc.player?.seek(to: currentTime)
-//        vc.player?.play()
-//        fromVC.present(vc, animated: true, completion: nil)
-   
         
+    /// 从新的页面全屏播放
+    /// - Parameters:
+    ///   - fromVC: 从哪个vc跳转
+    ///   - supportedOrientations: 支持的方向
+    public func enterFullScreen(_ fromVC: UIViewController, supportedOrientations: UIInterfaceOrientationMask = UIInterfaceOrientationMask.all){
         let playVC = XDPlayVC(playbackDelegate: playbackDelegate, supportedOrientations: supportedOrientations)
         playVC.player = _avplayer
         fromVC.present(playVC, animated: true, completion: nil)
         self._avFullScreenPlayer = playVC
+    }
+    
+    /// 状态栏的隐藏与显示
+    public func statusBarHidden(hidden: Bool) {
+        statusBarHidden = hidden
+        setNeedsStatusBarAppearanceUpdate()
     }
 }
 
