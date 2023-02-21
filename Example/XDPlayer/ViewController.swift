@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     @objc func fullBtnClick() {
-        self.player.enterFullScreen(self)
+
     }
 }
 

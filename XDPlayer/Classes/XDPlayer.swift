@@ -544,7 +544,7 @@ extension XDPlayer {
     ///   - completionHandler: Call block handler after seeking/
     public func seek(to time: CMTime, completionHandler: ((Bool) -> Swift.Void)? = nil) {
         if let playerItem = self._playerItem {
-            return playerItem.seek(to: time, completionHandler: completionHandler)
+            return playerItem.seek(to: time, toleranceBefore: .zero, toleranceAfter: .zero, completionHandler: completionHandler)
         } else {
             self._seekTimeRequested = time
         }
