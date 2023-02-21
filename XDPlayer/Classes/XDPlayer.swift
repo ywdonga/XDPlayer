@@ -72,9 +72,6 @@ public protocol XDPlayerPlaybackDelegate: AnyObject {
     func playerPlaybackDidEnd(_ player: XDPlayer)
     func playerPlaybackWillLoop(_ player: XDPlayer)
     func playerPlaybackDidLoop(_ player: XDPlayer)
-    
-    func playerEnterFullScreen()
-    func playerExitFullScreen()
 }
 
 // MARK: - Player
@@ -365,7 +362,6 @@ public class XDPlayer: UIViewController {
         return avplayer
     }()
     internal var _playerItem: AVPlayerItem?
-    internal weak var _avFullScreenPlayer: XDPlayVC?
 
     internal var _playerObservers = [NSKeyValueObservation]()
     internal var _playerItemObservers = [NSKeyValueObservation]()
@@ -438,7 +434,7 @@ public class XDPlayer: UIViewController {
 
     open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        if self.playbackState == .playing && _avFullScreenPlayer == nil {
+        if self.playbackState == .playing {
             self.pause()
         }
     }
@@ -609,26 +605,6 @@ extension XDPlayer {
         }
     }
 
-}
-
-extension XDPlayer {
-        
-    /// 从新的页面全屏播放
-    /// - Parameters:
-    ///   - fromVC: 从哪个vc跳转
-    ///   - supportedOrientations: 支持的方向
-    public func enterFullScreen(_ fromVC: UIViewController, supportedOrientations: UIInterfaceOrientationMask = UIInterfaceOrientationMask.all){
-        let playVC = XDPlayVC(playbackDelegate: playbackDelegate, supportedOrientations: supportedOrientations)
-        playVC.player = _avplayer
-        fromVC.present(playVC, animated: true, completion: nil)
-        self._avFullScreenPlayer = playVC
-    }
-    
-    /// 状态栏的隐藏与显示
-    public func statusBarHidden(hidden: Bool) {
-        statusBarHidden = hidden
-        setNeedsStatusBarAppearanceUpdate()
-    }
 }
 
 // MARK: - loading funcs
