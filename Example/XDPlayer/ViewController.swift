@@ -48,22 +48,11 @@ class ViewController: UIViewController {
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer(_:)))
         tapGestureRecognizer.numberOfTapsRequired = 1
         self.player.view.addGestureRecognizer(tapGestureRecognizer)
-        
-        let btn = UIButton(frame: CGRect(x: 10, y: 10, width: 100, height: 60))
-        btn.setTitle("全屏播放", for: .normal)
-        btn.backgroundColor = .red
-        btn.addTarget(self, action: #selector(fullBtnClick), for: .touchUpInside)
-        view.addSubview(btn)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         self.player.playFromCurrentTime()
-    }
-    
-    @objc func fullBtnClick() {
-
     }
 }
 
@@ -135,14 +124,6 @@ extension ViewController: XDPlayerPlaybackDelegate {
     }
 
     func playerPlaybackDidLoop(_ player: XDPlayer) {
-        
-    }
-    
-    func playerEnterFullScreen() {
-        
-    }
-    
-    func playerExitFullScreen() {
         
     }
 }
